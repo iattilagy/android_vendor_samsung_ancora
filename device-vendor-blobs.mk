@@ -20,6 +20,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ancora/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/ancora/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
     vendor/samsung/ancora/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/ancora/proprietary/system/lib/libv8.so:obj/lib/libv8.so \
+    vendor/samsung/ancora/proprietary/system/lib/libqc-opt.so:obj/lib/libqc-opt.so
 
 # Binaries
 PRODUCT_COPY_FILES += \
@@ -36,8 +38,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ancora/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     vendor/samsung/ancora/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     vendor/samsung/ancora/proprietary/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    vendor/samsung/ancora/proprietary/system/lib/egl/libGLESv2S3D_adreno200.so:/system/lib/egl/libGLESv2S3D_adreno200.so \
     vendor/samsung/ancora/proprietary/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
     vendor/samsung/ancora/proprietary/lib/libC2D2.so:system/lib/libC2D2.so \
+    vendor/samsung/ancora/proprietary/system/lib/libc2d2_z180.so:/system/lib/libc2d2_z180.so \
     vendor/samsung/ancora/proprietary/lib/libOpenVG.so:system/lib/libOpenVG.so \
     vendor/samsung/ancora/proprietary/lib/libgsl.so:system/lib/libgsl.so \
     vendor/samsung/ancora/proprietary/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
@@ -85,9 +89,35 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ancora/proprietary/etc/firmware/vidc_720p_mp4_enc_mc.fw:system/etc/firmware/vidc_720p_mp4_enc_mc.fw \
     vendor/samsung/ancora/proprietary/etc/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw \
     vendor/samsung/ancora/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    vendor/samsung/ancora/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+    vendor/samsung/ancora/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/a225_pfp.fw:/system/etc/firmware/a225_pfp.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/a225_pm4.fw:/system/etc/firmware/a225_pm4.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/a225p5_pm4.fw:/system/etc/firmware/a225p5_pm4.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/a300_pfp.fw:/system/etc/firmware/a300_pfp.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/a300_pm4.fw:/system/etc/firmware/a300_pm4.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
+    vendor/samsung/ancora/proprietary/system/etc/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw 
 
 # RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/ancora/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/ancora/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
+
+# Prebuilt libraries for CAF Chromium plug-ins
+PRODUCT_COPY_FILES += \
+    vendor/samsung/ancora/proprietary/system/lib/libcneapiclient.so:/system/lib/libcneapiclient.so \
+    vendor/samsung/ancora/proprietary/system/lib/libcneqmiutils.so:/system/lib/libcneqmiutils.so \
+    vendor/samsung/ancora/proprietary/system/lib/libdiag.so:/system/lib/libdiag.so \
+    vendor/samsung/ancora/proprietary/system/lib/libdnshostprio.so:/system/lib/libdnshostprio.so \
+    vendor/samsung/ancora/proprietary/system/lib/libnetmonitor.so:/system/lib/libnetmonitor.so \
+    vendor/samsung/ancora/proprietary/system/lib/libtcpfinaggr.so:/system/lib/libtcpfinaggr.so \
+    vendor/samsung/ancora/proprietary/system/lib/pp_proc_plugin.so:/system/lib/pp_proc_plugin.so \
+    vendor/samsung/ancora/proprietary/system/lib/qnet-plugin.so:/system/lib/qnet-plugin.so \
+    vendor/samsung/ancora/proprietary/system/lib/tcp-connections.so:/system/lib/tcp-connections.so
+
+# Prebuilt libraries from CodeAurora
+PRODUCT_COPY_FILES += \
+    vendor/samsung/ancora/proprietary/system/lib/libv8.so:system/lib/libv8.so \
+    vendor/samsung/ancora/proprietary/system/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/samsung/ancora/proprietary/system/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+    vendor/samsung/ancora/proprietary/system/lib/libqc-opt.so:system/lib/libqc-opt.so
